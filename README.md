@@ -1,11 +1,11 @@
 # Flow
 
 * **Storage Setup**
-    * git clone https://github.com/bhorev/glue-demo.git
-    * sed -i "s/uniqueid/_YOUR-LOGIN_/g" glue-demo/setup.sh
-    * Rename zip referenced from setup.sh (if needed)
-    * chmod +x glue-demo/setup.sh
-    * ./glue-demo/setup.sh
+    * `git clone https://github.com/bhorev/glue-demo.git`
+    * Replace _YOUR-LOGIN_: `sed -i "s/uniqueid/YOUR-LOGIN/g" glue-demo/setup.sh`
+    * Zip is in current directory. Rename zip (if needed) - as referenced from setup.sh
+    * `chmod +x glue-demo/setup.sh`
+    * `./glue-demo/setup.sh`
 * **Glue Catalog Setup (source)**
    * Create demo database (please call it "demo")
    * Crawl source bucket and create table in Glue catalog
@@ -17,3 +17,7 @@
    * Athena query
    * QuickSight dashboard
    * Add a folder in source bucket and re-run the job (with bookmarks)
+
+## Misc. Commands
+* Run job: `aws glue start-job-run --job-name myjob --arguments {\"--job-bookmark-option\":\"job-bookmark-enable\"}`
+* Reset job bookmark: `aws glue reset-job-bookmark --job-name myjob`
