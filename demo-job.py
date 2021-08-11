@@ -38,8 +38,8 @@ mydata = dfc.select(dfc_root_table_name)
 #mydata.show(5)
 
 # Repartition and to parquet
-#dailyData = mydata.repartition(1)
-parquetoutput = glueContext.write_dynamic_frame.from_options(frame = mydata, connection_type = "s3", connection_options = {"path": glue_repartitioned_parquet_output_s3_path, "partitionKeys": ["week"]}, format = "parquet", transformation_ctx = "parquetoutput")
+weeklyData = mydata.repartition(1)
+parquetoutput = glueContext.write_dynamic_frame.from_options(frame = weeklyData, connection_type = "s3", connection_options = {"path": glue_repartitioned_parquet_output_s3_path, "partitionKeys": ["week"]}, format = "parquet", transformation_ctx = "parquetoutput")
 
 # Close
 job.commit()
