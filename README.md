@@ -24,3 +24,5 @@
 ## Misc. Commands
 * Run job: `aws glue start-job-run --job-name myjob --arguments {\"--job-bookmark-option\":\"job-bookmark-enable\"}`
 * Reset job bookmark: `aws glue reset-job-bookmark --job-name myjob`
+
+See also: https://github.com/aws-samples/aws-glue-samples
