@@ -11,8 +11,9 @@
    * Crawl source bucket and create table in Glue catalog
    * Change partition name to "week"
 * **ETL Batch Job Setup**
-   * Configure and run Glue job (with bookmarks)
+   * Configure Glue job
    * Make sure IAM role has permissions on both source and destination buckets
+   * Run Glue job (with bookmarks)
    * Crawl destination bucket out folder (not the whole bucket)
 * **Running (repeatable)**
    * Athena query
