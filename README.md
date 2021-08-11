@@ -12,6 +12,7 @@
    * Change partition name to "week"
 * **ETL Batch Job Setup**
    * Configure Glue job
+       * Fix _glue_source_table_ in job script from hyphens to underscores
    * Make sure IAM role has permissions on both source and destination buckets
    * Run Glue job (with bookmarks)
    * Crawl destination bucket out folder (not the whole bucket)
