@@ -2,7 +2,7 @@
 
 * **Storage Setup**
     * git clone https://github.com/bhorev/glue-demo.git
-    * sed -i "s/uniqueid/<YOUR-LOGIN>/g" glue-demo/setup.sh
+    * sed -i "s/uniqueid/_YOUR-LOGIN_/g" glue-demo/setup.sh
     * Rename zip referenced from setup.sh (if needed)
     * chmod +x glue-demo/setup.sh
     * ./glue-demo/setup.sh
