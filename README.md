@@ -1,4 +1,4 @@
-#Workshop Flow
+# Workshop Flow
 
 1. Setup
   1. git clone https://github.com/bhorev/glue-demo.git
