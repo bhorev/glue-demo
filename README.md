@@ -18,6 +18,7 @@
    * Crawl destination bucket out folder (not the whole bucket)
 * **Running (repeatable)**
    * Athena query
+       * Note: Before you run your first query, you need to set up a query result location in Amazon S3
    * QuickSight dashboard
    * Add a folder in source bucket and re-run the job (with bookmarks)
 
