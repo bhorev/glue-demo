@@ -6,7 +6,7 @@
     * Zip is in current directory. Note zip name is referenced from setup.sh
     * `chmod +x glue-demo/setup.sh`
     * `./glue-demo/setup.sh`
-* **Glue Catalog Setup (source)**
+* **Glue Data Catalog Setup (source)**
    * Create demo database (please call it "demo")
    * Crawl source bucket and create table in Glue catalog
    * Change partition name to "week"
