@@ -3,7 +3,7 @@
 * **Storage Setup**
     * `git clone https://github.com/bhorev/glue-demo.git`
     * Replace _YOUR-LOGIN_: `sed -i "s/uniqueid/YOUR-LOGIN/g" glue-demo/setup.sh`
-    * Zip is in current directory. Rename zip (if needed) - as referenced from setup.sh
+    * Zip is in current directory. Note zip name is referenced from setup.sh
     * `chmod +x glue-demo/setup.sh`
     * `./glue-demo/setup.sh`
 * **Glue Catalog Setup (source)**
