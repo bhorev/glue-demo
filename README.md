@@ -20,7 +20,7 @@
    * Athena query
        * Note: Before you run your first query, you need to set up a query result location in Amazon S3
    * QuickSight dashboard
-   * Add a folder in source bucket and re-run the job (with bookmarks)
+   * Add a folder in source bucket and re-run the job (with bookmarks), and in Athena - load partitions
 
 ## Misc. Commands
 * Run job: `aws glue start-job-run --job-name myjob --arguments {\"--job-bookmark-option\":\"job-bookmark-enable\"}`
