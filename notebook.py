@@ -17,7 +17,7 @@ glueContext = GlueContext(SparkContext.getOrCreate())
 
 
 glue_source_database = "demo"
-glue_source_table = "xhorev_out"
+glue_source_table = "out_table"
 datasource1 = glueContext.create_dynamic_frame.from_catalog(database = glue_source_database, table_name = glue_source_table, transformation_ctx = "datasource1")
 
 
@@ -40,7 +40,7 @@ sqlDF.show()
 # In[5]:
 
 
-datasource0 = glueContext.create_dynamic_frame.from_options(connection_type="parquet", connection_options={ "paths": ["s3://xhorev-glue-120821-dst/out"]})
+datasource0 = glueContext.create_dynamic_frame.from_options(connection_type="parquet", connection_options={ "paths": ["s3://out_bucket/out_folder"]})
 
 
 # In[6]:
